@@ -49,7 +49,7 @@ class TannerHandler():
         try:
             async with aiohttp.ClientSession() as session:
                 r = await session.post(
-                    'http://{0}:8090/event'.format(self.run_args.tanner), data=json.dumps(data),
+                    'http://{0}:5678/event'.format(self.run_args.tanner), data=json.dumps(data),
                     timeout=10.0
                 )
                 try:

@@ -18,7 +18,7 @@ class HtmlHandler():
         try:
             async with aiohttp.ClientSession() as session:
                 r = await session.get(
-                    'http://{0}:8090/dorks'.format(self.tanner), timeout=10.0
+                    'http://{0}:5678/dorks'.format(self.tanner), timeout=10.0
                 )
                 try:
                     dorks = await r.json()

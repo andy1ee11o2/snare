@@ -10,7 +10,7 @@ RUN apk -U --no-cache add \
 # Setup Snare 
     git clone --depth=1 https://github.com/andy1ee11o2/snare /opt/snare && \
     cd /opt/snare/ && \
-    pip3 install --no-cache-dir --upgrade pip setuptools && \
+    pip3 install --no-cache-dir --upgrade setuptools && \
     pip3 install --no-cache-dir -r requirements.txt && \
     python3.6 setup.py install && \
     cd / && \

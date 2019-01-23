@@ -109,7 +109,7 @@ def compare_version_info(timeout):
 async def check_tanner():
     vm = snare_helpers.VersionManager()
     async with aiohttp.ClientSession() as client:
-        req_url = 'http://{}:8090/version'.format(args.tanner)
+        req_url = 'http://{}:5678/version'.format(args.tanner)
         try:
             resp = await client.get(req_url)
             result = await resp.json()

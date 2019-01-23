@@ -16,5 +16,5 @@ services:
      - snare_local
     ports:
      - "8081:8081"
-    image: "andy1ww11o2/snare:latest"
+    image: "andy1ee11o2/snare:latest"
     command:  sh -c "clone --target http://www.tenmax.com && snare --no-dorks true --auto-update false --host-ip 0.0.0.0 --port 8081 --page-dir www.tenmax.com --tanner xxx.xxx.xxx.xxx"
